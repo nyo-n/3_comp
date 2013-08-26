@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11E2617" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="abe_test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-bf-RmY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="mm3-eG-ukx"/>
+                                    <constraint firstAttribute="width" constant="120" id="pUC-VK-Apt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mukai_test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oUL-oZ-ZrL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Gzf-nk-ooV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgH-2p-0la">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="bt8-dN-trS"/>
+                                    <constraint firstAttribute="width" constant="64" id="pI6-xQ-5Qz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TapBtn:" destination="2" eventType="touchUpInside" id="xgP-bf-OlB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlG-OB-UvO"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="koike_test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v7J-0r-WVl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="rEa-IG-aJX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SAD結果" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhY-kC-BNJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ZNCC計算" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K3-q2-LB9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="4Td-P7-QnL"/>
+                                    <constraint firstAttribute="height" constant="31" id="TCy-jo-XdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-gM-InI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="NPU-vc-y36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SAD計算">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SAD_calculate:" destination="2" eventType="touchUpInside" id="2bg-I0-q5N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-SF-p01">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="zFa-vV-iVm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ZNCC計算">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ZNCC_calculate:" destination="2" eventType="touchUpInside" id="IQr-vY-mWs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ehJ-SF-p01" secondAttribute="bottom" constant="90" id="7af-hp-jNU"/>
+                            <constraint firstItem="rhY-kC-BNJ" firstAttribute="leading" secondItem="DjG-gM-InI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="8ah-P5-sP4"/>
+                            <constraint firstItem="oUL-oZ-ZrL" firstAttribute="bottom" secondItem="jjS-bf-RmY" secondAttribute="bottom" type="default" id="Cb6-7u-NsS"/>
+                            <constraint firstItem="rhY-kC-BNJ" firstAttribute="top" secondItem="DjG-gM-InI" secondAttribute="top" type="default" id="Ewu-8w-rro"/>
+                            <constraint firstItem="AgH-2p-0la" firstAttribute="centerX" secondItem="oUL-oZ-ZrL" secondAttribute="centerX" type="default" id="GGc-ca-1Fh"/>
+                            <constraint firstItem="UlG-OB-UvO" firstAttribute="top" secondItem="v7J-0r-WVl" secondAttribute="top" type="default" id="Kmq-AM-xq4"/>
+                            <constraint firstItem="4K3-q2-LB9" firstAttribute="leading" secondItem="ehJ-SF-p01" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="L6B-Ec-yS1"/>
+                            <constraint firstItem="v7J-0r-WVl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LaH-iK-CKy"/>
+                            <constraint firstItem="jjS-bf-RmY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Mu3-Eu-Rzu"/>
+                            <constraint firstAttribute="trailing" secondItem="UlG-OB-UvO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OGS-74-fcl"/>
+                            <constraint firstItem="v7J-0r-WVl" firstAttribute="trailing" secondItem="jjS-bf-RmY" secondAttribute="trailing" type="default" id="T9R-qy-TVm"/>
+                            <constraint firstItem="UlG-OB-UvO" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="VfU-oo-S3X"/>
+                            <constraint firstItem="ehJ-SF-p01" firstAttribute="leading" secondItem="DjG-gM-InI" secondAttribute="leading" type="default" id="WMs-k1-cm4"/>
+                            <constraint firstItem="4K3-q2-LB9" firstAttribute="baseline" secondItem="ehJ-SF-p01" secondAttribute="baseline" type="default" id="Z5s-5C-qJk"/>
+                            <constraint firstAttribute="bottom" secondItem="DjG-gM-InI" secondAttribute="bottom" constant="146" id="anm-Dg-hG7"/>
+                            <constraint firstAttribute="trailing" secondItem="rhY-kC-BNJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cRf-e5-CVY"/>
+                            <constraint firstAttribute="trailing" secondItem="oUL-oZ-ZrL" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hqb-Es-2Xb"/>
+                            <constraint firstItem="jjS-bf-RmY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="11" id="jdg-F4-Uly"/>
+                            <constraint firstItem="UlG-OB-UvO" firstAttribute="bottom" secondItem="v7J-0r-WVl" secondAttribute="bottom" type="default" id="jz8-G9-Ays"/>
+                            <constraint firstItem="AgH-2p-0la" firstAttribute="top" secondItem="oUL-oZ-ZrL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pRE-8d-iOF"/>
+                            <constraint firstItem="UlG-OB-UvO" firstAttribute="leading" secondItem="oUL-oZ-ZrL" secondAttribute="leading" type="default" id="tUn-Yj-xxC"/>
+                            <constraint firstAttribute="trailing" secondItem="4K3-q2-LB9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="w1Q-kP-gYP"/>
+                            <constraint firstItem="oUL-oZ-ZrL" firstAttribute="top" secondItem="jjS-bf-RmY" secondAttribute="top" type="default" id="wWA-F0-lg9"/>
+                            <constraint firstItem="rhY-kC-BNJ" firstAttribute="centerY" secondItem="DjG-gM-InI" secondAttribute="centerY" type="default" id="wY1-k5-vvM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SAD_result" destination="rhY-kC-BNJ" id="sEF-7i-LrY"/>
+                        <outlet property="ZNCC_result" destination="4K3-q2-LB9" id="bbK-Zn-x2u"/>
+                        <outlet property="result" destination="oUL-oZ-ZrL" id="8KG-c7-7Vg"/>
+                        <outlet property="resultImage" destination="UlG-OB-UvO" id="qwZ-FW-v84"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abe_test.jpg" width="200" height="218"/>
+        <image name="koike_test.jpg" width="200" height="218"/>
+        <image name="mukai_test.jpg" width="200" height="218"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SAD_calculate:"/>
+                <relationship kind="action" name="TapBtn:"/>
+                <relationship kind="action" name="ZNCC_calculate:"/>
+                <relationship kind="outlet" name="SAD_result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ZNCC_result" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="result" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="resultImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
